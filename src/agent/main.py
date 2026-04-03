@@ -4,9 +4,9 @@ import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from agent.scanner import RegistryScanner
-from agent.reporter import JsonReporter
-from agent.logger import AppLogger
+from scanner import RegistryScanner
+from reporter import JsonReporter
+from logger import AppLogger
 
 def main():
     parser = argparse.ArgumentParser(description="Агент инвентаризации ПО")
